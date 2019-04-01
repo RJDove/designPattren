@@ -15,7 +15,6 @@ public class Client {
 
         Box box = new Box();
         box.setOpenCommand(openCommand);
-
         box.openButtonPressed();
 
     }

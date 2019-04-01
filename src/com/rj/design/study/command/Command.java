@@ -1,9 +1,12 @@
 package com.rj.design.study.command;
 
+/**
+ * 命令接口，声明执行的操作
+ */
 public interface Command {
 
     /**
      * 执行命令对应的操作
      */
-    public void execute();
+    void execute();
 }

@@ -22,4 +22,9 @@ public class GigaMainBoard implements MainBoardApi{
         System.out.println("机器已经正常打开，请操作");
     }
 
+
+    @Override
+    public void reset() {
+        System.out.println("正在重启，请稍后。。。");
+    }
 }

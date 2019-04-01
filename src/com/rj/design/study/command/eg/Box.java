@@ -27,4 +27,18 @@ public class Box {
         //按下按钮，执行命令
         openCommand.execute();
     }
+
+    /**
+     * 重启机器命令
+     */
+    private Command resetCommand;
+
+    public void setResetCommand(Command resetCommand) {
+        this.resetCommand = resetCommand;
+    }
+
+    public void resetConmandPressed() {
+        //按下重启机器命令
+        resetCommand.execute();
+    }
 }
