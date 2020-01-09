@@ -37,11 +37,13 @@ public class DynamicProxy implements InvocationHandler {
         if (method.getName().startsWith("set")) {
             //如果不是创建人，那就不能修改
             if (order.getOrderUser() != null && order.getOrderUser().equals(args[1])) {
+                System.out.println("invoke1");
                 return method.invoke(order, args);
             } else {
                 System.out.println("对不起" + args[1] + ",您无权修改本订单的数据");
             }
         } else {
+            System.out.println("invoke2");
             return method.invoke(order, args);
         }
         return null;

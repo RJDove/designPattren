@@ -74,3 +74,7 @@ class SingletonForHungryBest {
         return SingletonHolder.uniqueInstance;
     }
 }
+
+enum SignletonEnum {
+    INSTANCE;
+}
