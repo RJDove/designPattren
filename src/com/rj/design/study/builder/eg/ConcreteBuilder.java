@@ -15,14 +15,14 @@ public class ConcreteBuilder implements Builder {
     /**
      * 生成器最终构建的产品对象
      */
-    private Product resultProdect;
+    private Product resultProduct;
 
-    public Product getResultProdect() {
-        return resultProdect;
+    public Product getResultProduct() {
+        return resultProduct;
     }
 
-    public void setResultProdect(Product resultProdect) {
-        this.resultProdect = resultProdect;
+    public void setResultProduct(Product resultProduct) {
+        this.resultProduct = resultProduct;
     }
 
     @Override

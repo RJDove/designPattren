@@ -19,12 +19,13 @@ public class DynamicProxy implements InvocationHandler {
 
     /**
      * 获取绑定好代理和具体目标对象后的目标对象的接口
+     *
      * @param order 具体的订单对象，相当于具体目标对象
      * @return 绑定好代理和具体目标对象后的目标对象的接口
      */
     public OrderApi getProxyInterface(Order order) {
         this.order = order;
-        OrderApi orderApi = (OrderApi)Proxy.newProxyInstance(
+        OrderApi orderApi = (OrderApi) Proxy.newProxyInstance(
                 order.getClass().getClassLoader(),
                 order.getClass().getInterfaces(),
                 this);
