@@ -3,7 +3,7 @@ package com.rj.design.study.command;
 /**
  * @version 1.0.0
  * @desc 接收者对象
- * @auth rj
+ * @auth eg2
  * @date 2019/1/13
  * @modifyBy
  */

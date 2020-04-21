@@ -5,7 +5,7 @@ import com.rj.design.study.command.Command;
 /**
  * @version 1.0.0
  * @desc 机箱对象，本身有按钮，持有按钮对应的命令对象
- * @auth rj
+ * @auth eg2
  * @date 2019/1/13
  * @modifyBy
  */

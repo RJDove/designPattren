@@ -3,6 +3,9 @@ package com.rj.design.study.decorator;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 在内存中模拟数据库
+ */
 public class TempDB {
 
     private TempDB() {

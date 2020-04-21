@@ -6,7 +6,7 @@ import com.rj.design.study.command.eg.MainBoardApi;
 /**
  * @version 1.0.0
  * @descripton 新增重启机器命令
- * @auth rj
+ * @auth eg2
  * @date 2019/4/1
  */
 public class ResetCommand implements Command {

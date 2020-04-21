@@ -13,7 +13,7 @@ import java.util.Iterator;
 /**
  * @version 1.0.0
  * @desc
- * @auth rj
+ * @auth eg2
  * @date 2019/1/8
  * @modifyBy
  */
@@ -21,7 +21,7 @@ public class Server {
 
     private Charset charset = StandardCharsets.UTF_8;
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
         serverSocketChannel.bind(new InetSocketAddress(8090));
         serverSocketChannel.configureBlocking(false);
@@ -34,14 +34,14 @@ public class Server {
                 if (selectionKey.isAcceptable()) {
                     SocketChannel socketChannel = serverSocketChannel.accept();
                     socketChannel.configureBlocking(false);
-                    socketChannel.register(selector,SelectionKey.OP_READ);
+                    socketChannel.register(selector, SelectionKey.OP_READ);
                 } else if (selectionKey.isReadable()) {
-                    SocketChannel socketChannel = (SocketChannel)selectionKey.channel();
+                    SocketChannel socketChannel = (SocketChannel) selectionKey.channel();
                     ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                     StringBuffer content = new StringBuffer();
-                     while (socketChannel.read(byteBuffer) > 0) {
-                         byteBuffer.flip();
-                         content.append(Charset.forName("UTF-8").decode(byteBuffer));
+                    while (socketChannel.read(byteBuffer) > 0) {
+                        byteBuffer.flip();
+                        content.append(Charset.forName("UTF-8").decode(byteBuffer));
                     }
                     System.out.println("client -->" + content);
                 }

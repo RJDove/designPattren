@@ -3,7 +3,7 @@ package com.rj.design.study.command.eg;
 /**
  * @version 1.0.0
  * @desc 主板的接口
- * @auth rj
+ * @auth eg2
  * @date 2019/1/13
  * @modifyBy
  */

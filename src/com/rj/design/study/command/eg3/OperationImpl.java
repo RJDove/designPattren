@@ -3,7 +3,7 @@ package com.rj.design.study.command.eg3;
 /**
  * @version 1.0.0
  * @descripton
- * @auth rj
+ * @auth eg2
  * @date 2019/4/1
  */
 public class OperationImpl implements OperationApi {

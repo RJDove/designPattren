@@ -11,7 +11,7 @@ public class CustomerServiceImpl implements CustomerService {
         Customer customer = new Customer();
         customer.setAddress("sz");
         customer.setAge("24");
-        customer.setName("rj");
+        customer.setName("eg2");
         return customer;
     }
 }

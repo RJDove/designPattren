@@ -10,5 +10,5 @@ public interface Mediator {
      * 让中介者去负责相应的与其他同事对象的交互
      * @param colleague 同事对象自身
      */
-    public void changed(Colleague colleague);
+    void changed(Colleague colleague);
 }

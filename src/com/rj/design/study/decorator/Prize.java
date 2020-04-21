@@ -22,6 +22,7 @@ public class Prize {
 
     /**
      * 计算团队奖金
+     *
      * @param user
      * @param begin
      * @param end
@@ -44,6 +45,7 @@ public class Prize {
 
     /**
      * 计算某人累计奖金
+     *
      * @param user
      * @param begin
      * @param end
@@ -57,6 +59,7 @@ public class Prize {
 
     /**
      * 计算当月业务奖金
+     *
      * @param user
      * @param begin
      * @param end

@@ -5,7 +5,7 @@ import com.rj.design.study.command.Command;
 /**
  * @version 1.0.0
  * @desc 开机命令的实现，实现Command接口
- * @auth rj
+ * @auth eg2
  * @date 2019/1/13
  * @modifyBy
  */
